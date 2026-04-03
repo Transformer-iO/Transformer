@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Coming Soon</title>
+
+<style>
+  body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    /* gradient base (acts like ambient color) */
+    background: linear-gradient(135deg, #e0e0e0, #ffffff);
+  }
+
+  .glass {
+    padding: 40px;
+    border-radius: 20px;
+
+    /* crystal / glass effect */
+    background: rgba(255, 255, 255, 0.25);
+    backdrop-filter: blur(25px) saturate(180%);
+    -webkit-backdrop-filter: blur(25px) saturate(180%);
+
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    box-shadow: 0 8px 32px rgba(0,0,0,0.1);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  img {
+    max-width: 200px;
+    width: 100%;
+  }
+</style>
+</head>
+
+<body>
+
+<div class="glass">
+  <img src="logo.png" alt="Logo">
+</div>
+
+</body>
+</html>
